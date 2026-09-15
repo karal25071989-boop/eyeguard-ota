@@ -1,0 +1,8 @@
+# Ignore secrets and keys — never commit private material
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+.env
+secrets/
