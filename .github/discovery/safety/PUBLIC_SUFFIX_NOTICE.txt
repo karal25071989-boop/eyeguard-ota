@@ -1,0 +1,5 @@
+Mozilla Public Suffix List
+Source: https://publicsuffix.org/list/public_suffix_list.dat
+License: Mozilla Public License 2.0
+Bundled for offline eTLD+1 (registrable-domain) calculation in the EyeGuard dataset builder only.
+This file is not shipped in the Android APK by P1.

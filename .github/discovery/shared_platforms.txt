@@ -1,0 +1,55 @@
+# Shared hosting, social, CDN and storage platforms.
+# A candidate equal to one of these is BLOCKED (it would block the whole platform).
+# A candidate under one of these needs REVIEW (it blocks part of a shared platform).
+# One domain per line. Comments start with #.
+blogspot.com
+wordpress.com
+tumblr.com
+github.io
+githubusercontent.com
+gitlab.io
+pages.dev
+workers.dev
+vercel.app
+netlify.app
+web.app
+firebaseapp.com
+appspot.com
+herokuapp.com
+onrender.com
+azurewebsites.net
+cloudfront.net
+akamaized.net
+fastly.net
+amazonaws.com
+googleusercontent.com
+googleapis.com
+gstatic.com
+sites.google.com
+reddit.com
+redd.it
+twitter.com
+x.com
+t.co
+facebook.com
+fbcdn.net
+instagram.com
+cdninstagram.com
+tiktok.com
+snapchat.com
+discord.com
+discordapp.com
+discord.gg
+telegram.me
+t.me
+imgur.com
+medium.com
+substack.com
+weebly.com
+wixsite.com
+squarespace.com
+000webhostapp.com
+neocities.org
+dropbox.com
+mega.nz
+4cdn.org

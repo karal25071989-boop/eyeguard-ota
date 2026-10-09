@@ -1,0 +1,19 @@
+category,domain,reason
+SEARCH,google.com,Google Search canonical hostname
+EDUCATION,wikipedia.org,Wikimedia encyclopedia canonical hostname
+EDUCATION,ncert.nic.in,NCERT official education hostname
+INDIAN_GOVERNMENT,india.gov.in,National Portal of India
+INDIAN_GOVERNMENT,uidai.gov.in,UIDAI / Aadhaar official hostname
+INDIAN_GOVERNMENT,indiapost.gov.in,India Post official hostname
+INDIAN_GOVERNMENT,gov.in,Must never list the Indian government public suffix
+BANKING_FINANCE,sbi.co.in,State Bank of India official hostname
+BANKING_FINANCE,rbi.org.in,Reserve Bank of India official hostname
+SHOPPING,amazon.in,Amazon India official hostname
+SHOPPING,flipkart.com,Flipkart official hostname
+NEWS,thehindu.com,The Hindu newspaper official hostname
+VIDEO,youtube.com,YouTube canonical hostname
+MESSAGING,whatsapp.com,WhatsApp canonical hostname
+MAPS,maps.google.com,Google Maps canonical hostname
+SOFTWARE,microsoft.com,Microsoft official hostname
+SOFTWARE,play.google.com,Google Play official hostname
+INDIAN_CONSUMER,irctc.co.in,IRCTC official booking hostname
