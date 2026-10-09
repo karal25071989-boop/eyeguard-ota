@@ -1,0 +1,57 @@
+# EyeGuard weekly adult-domain discovery. READ-ONLY.
+# Produces a downloadable report artifact only. It never commits, never signs,
+# never publishes and never changes manifest.json, domains.bin or snapshot.json.
+name: Weekly domain discovery (read-only)
+
+on:
+  schedule:
+    - cron: "37 3 * * 0" # Sundays 03:37 UTC = 09:07 IST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: eyeguard-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out discovery files only
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            /.github/discovery/
+          sparse-checkout-cone-mode: false
+
+      - name: Self-tests
+        run: python3 -m unittest discover -s .github/discovery/tests -v
+
+      - name: Discover (read-only)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/discovery/discover.py --out "$RUNNER_TEMP/eyeguard-discovery"
+
+      - name: Guard - repository unchanged
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --porcelain
+            echo "::error::Discovery changed the repository working tree"
+            exit 1
+          fi
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: eyeguard-discovery-${{ github.run_number }}
+          path: ${{ runner.temp }}/eyeguard-discovery/
+          retention-days: 30
+          if-no-files-found: error

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "allowed_hosts": [
+    "api.github.com",
+    "raw.githubusercontent.com",
+    "karal25071989-boop.github.io"
+  ],
+  "request_timeout_seconds": 60,
+  "request_retries": 3,
+  "max_malformed_ratio": 0.005,
+  "live_ota": {
+    "manifest_url": "https://karal25071989-boop.github.io/eyeguard-ota/manifest.json",
+    "manifest_max_bytes": 16384,
+    "snapshot_max_bytes": 65536,
+    "domains_max_bytes": 33554432,
+    "uncompressed_max_bytes": 67108864,
+    "signature_algorithm": "SHA256withECDSA",
+    "public_key_file": "ota_public_key_spki.txt"
+  },
+  "sources": [
+    {
+      "id": "hagezi",
+      "name": "HaGeZi NSFW",
+      "owner": "hagezi",
+      "repo": "dns-blocklists",
+      "branch": "main",
+      "path": "wildcard/nsfw-onlydomains.txt",
+      "format": "domains",
+      "license": "GPL-3.0",
+      "informational_only": true,
+      "expected_header_lines": [
+        "# Title: HaGeZi's NSFW - blocks adult content!",
+        "# Syntax: Domains (without subdomains)"
+      ],
+      "count_header_regex": "^# Number of entries: ([0-9,]+)\\s*$",
+      "min_entries": 20000,
+      "max_entries": 500000,
+      "max_bytes": 10485760
+    },
+    {
+      "id": "stevenblack",
+      "name": "StevenBlack porn-only",
+      "owner": "StevenBlack",
+      "repo": "hosts",
+      "branch": "master",
+      "path": "alternates/porn-only/hosts",
+      "format": "hosts",
+      "license": "MIT",
+      "informational_only": false,
+      "expected_header_lines": [
+        "# Title: StevenBlack/hosts extension porn"
+      ],
+      "count_header_regex": "^# Number of unique domains: ([0-9,]+)\\s*$",
+      "min_entries": 20000,
+      "max_entries": 500000,
+      "max_bytes": 10485760
+    }
+  ]
+}

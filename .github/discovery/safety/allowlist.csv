@@ -1,0 +1,72 @@
+domain,reason
+google.com,Critical search canary
+google.co.in,India Google search
+bing.com,Search
+yahoo.com,Search
+duckduckgo.com,Search
+wikipedia.org,Critical education canary
+ncert.nic.in,Critical education canary
+ncert.gov.in,NCERT
+education.gov.in,India education ministry
+diksha.gov.in,DIKSHA
+swayam.gov.in,SWAYAM
+khanacademy.org,Education
+india.gov.in,Critical Indian government canary
+gov.in,Must never list the Indian government public suffix
+uidai.gov.in,Critical UIDAI canary
+indiapost.gov.in,Critical India Post canary
+mygov.in,MyGov
+digitalindia.gov.in,Digital India
+incometax.gov.in,Income tax
+gst.gov.in,GST
+epfindia.gov.in,EPFO
+nic.in,NIC
+sbi.co.in,Critical SBI canary
+rbi.org.in,Critical RBI canary
+hdfcbank.com,Major Indian bank
+icicibank.com,Major Indian bank
+axisbank.com,Major Indian bank
+kotak.com,Major Indian bank
+npci.org.in,UPI/NPCI
+onlinesbi.sbi,SBI online
+bank.sbi,SBI
+paytm.com,UPI/payment
+phonepe.com,UPI/payment
+bhimupi.org.in,BHIM UPI
+amazon.in,Critical shopping canary
+flipkart.com,Critical shopping canary
+amazon.com,Shopping/cloud
+myntra.com,Shopping
+ajio.com,Shopping
+thehindu.com,Critical news canary
+indianexpress.com,News
+hindustantimes.com,News
+ndtv.com,News
+timesofindia.indiatimes.com,News
+youtube.com,Critical video canary
+youtu.be,YouTube short host
+whatsapp.com,Critical messaging canary
+telegram.org,Messaging
+maps.google.com,Critical maps canary
+maps.google.co.in,Maps India
+microsoft.com,Critical software canary
+play.google.com,Critical Play canary
+office.com,Microsoft 365
+live.com,Microsoft account
+apple.com,Apple
+irctc.co.in,Critical IRCTC canary
+irctc.com,IRCTC
+indianrail.gov.in,Indian Railways
+airindia.com,Airline
+goindigo.in,Airline
+makemytrip.com,Travel
+swiggy.com,Food delivery
+zomato.com,Food delivery
+naukri.com,Jobs
+linkedin.com,Jobs
+mohfw.gov.in,Health ministry
+who.int,WHO
+github.com,Software
+spotify.com,Music
+cloud.google.com,Google Cloud
+azure.com,Microsoft Azure
